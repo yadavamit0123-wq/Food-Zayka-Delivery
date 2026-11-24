@@ -23,9 +23,7 @@ class BiometricLoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: Dimensions.paddingSizeExtraLarge),
-              Image.asset(Images.logo, width: 100),
-              const SizedBox(height: Dimensions.paddingSizeSmall),
-              Image.asset(Images.logoName, width: 100),
+              Image.asset(Images.logo, width: 240, fit: BoxFit.contain),
               const SizedBox(height: Dimensions.paddingSizeExtraLarge),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),

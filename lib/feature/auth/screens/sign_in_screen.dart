@@ -73,9 +73,7 @@ class _SignInViewScreenState extends State<SignInViewScreen> {
               child: GetBuilder<AuthController>(builder: (authController) {
                 return Column(children: [
 
-                  Image.asset(Images.logo, width: 100),
-                  const SizedBox(height: Dimensions.paddingSizeSmall),
-                  Image.asset(Images.logoName, width: 100),
+                  Image.asset(Images.logo, width: 240, fit: BoxFit.contain),
                   const SizedBox(height: Dimensions.paddingSizeExtraLarge),
 
                   Text('sign_in'.tr.toUpperCase(), style: robotoBlack.copyWith(fontSize: 30)),

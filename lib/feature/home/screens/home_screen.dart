@@ -174,12 +174,9 @@ class _HomeScreenState extends State<HomeScreen> {
         surfaceTintColor: Theme.of(context).cardColor,
         shadowColor: Theme.of(context).disabledColor.withValues(alpha: 0.5),
         elevation: 2,
-        leading: Padding(
-          padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),
-          child: Image.asset(Images.logo, height: 30, width: 30),
-        ),
+        leading: const SizedBox(width: 8),
         titleSpacing: 0,
-        title: Image.asset(Images.logoName, width: 120),
+        title: Image.asset(Images.logo, width: 150, fit: BoxFit.contain),
         actions: [
 
           IconButton(
